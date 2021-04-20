@@ -41,10 +41,10 @@
       ]
     },
     {
-      "slug": "filename",
-      "headline": "Headline goes here",
-      "date": "Month DD, YYYY",
-      "image": "image.jpg",
+      "slug": "2019-10-20",
+      "headline": "Onto the Caribbean",
+      "date": "Oct 20, 2019",
+      "image": "kraken03.jpg",
       "post": [
         {
           "type": "text",

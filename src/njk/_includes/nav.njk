@@ -13,7 +13,17 @@
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Library books
+          Ship's Log
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          {% for blog in blog.blogs %}
+          <p><a class="dropdown-item" href="{{ relative_path }}blog/{{ blog.slug }}.html">{{ blog.date }}</a></p>
+          {% endfor %}
+        </div>
+      </li>
+            <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Library Books
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           {% for book in library.books %}
